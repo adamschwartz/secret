@@ -40,9 +40,9 @@
       font-weight: 400;
     }
   </style>
-  <input spellcheck="false" id="key" placeholder="Key" type="text" autofocus>
-  <input spellcheck="false" id="text" placeholder="Text" type="text">
-  <input spellcheck="false" id="encrypted" placeholder="Encrypted" type="text">
+  <input id="key" placeholder="Key" type="text" spellcheck="false" autofocus>
+  <input id="text" placeholder="Text" type="text" spellcheck="false">
+  <input id="encrypted" placeholder="Encrypted" type="text" spellcheck="false">
   <script>
     document.body.addEventListener('keypress', function(e) {
       if (e.keyCode === 13) {
