@@ -46,8 +46,7 @@
   <script>
     document.body.addEventListener('keypress', function(e) {
       if (e.keyCode === 13) {
-        window.decrypted = CryptoJS.AES.encrypt(text.value, key.value);
-        encrypted.value = window.decrypted;
+        encrypted.value = window.encrypted = CryptoJS.AES.encrypt(text.value, key.value);
         encrypted.select();
       }
     });
